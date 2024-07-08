@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo1.MyVuzController">
+   <children>
+      <TableView fx:id="table" layoutX="-2.0" layoutY="144.0" prefHeight="255.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="290.40003049373627" text="Название вашего ВУЗа" />
+            <TableColumn fx:id="rank" prefWidth="308.7999572753906" text="Рейтинг вашего ВУЗа" />
+        </columns>
+      </TableView>
+      <Label layoutX="87.0" layoutY="46.0" prefHeight="50.0" prefWidth="426.0" text="Подсчет среднего балла для вашего ВУЗа">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="next_but" layoutX="514.0" layoutY="111.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="41.0" text="Top" />
+      <Button fx:id="back_but" layoutX="61.0" layoutY="111.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>

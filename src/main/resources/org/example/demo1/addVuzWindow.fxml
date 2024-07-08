@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo1.addVuzController">
+    <children>
+        <AnchorPane layoutY="151.0" prefHeight="348.0" prefWidth="700.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="151.2">
+            <children>
+                <ImageView fitHeight="112.0" fitWidth="146.0" layoutX="14.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+                    <!--                    <image>-->
+                    <!--                        <Image url="C:/Users/User/Downloads/HakatonGUI/hakLogo.png" />-->
+                    <!--                    </image>-->
+                    <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="25.14" surfaceScale="1.68">
+                            <bumpInput>
+                                <BoxBlur />
+                            </bumpInput>
+                            <light>
+                                <Light.Distant>
+                                    <color>
+                                        <Color red="0.5065730810165405" green="0.31438595056533813" blue="0.75789475440979" />
+                                    </color>
+                                </Light.Distant>
+                            </light>
+                        </Lighting>
+                    </effect>
+                </ImageView>
+                <Button fx:id="new_vuz_but" layoutX="301.0" layoutY="251.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="enter" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="301.6">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="new_vuz" layoutX="149.0" layoutY="104.0" prefHeight="26.0" prefWidth="394.0" promptText="Enter field" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="76.0" layoutY="53.0" prefHeight="62.0" prefWidth="548.0" text="Введите название ВУЗа" textFill="WHITE" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="76.79999999999995">
+            <font>
+                <Font name="Calibri" size="53.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
